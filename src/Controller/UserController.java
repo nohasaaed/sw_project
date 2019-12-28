@@ -25,5 +25,29 @@ public class UserController{
            else
                return user.firstName+" "+user.lastName;
        }
+        public String addFreind(String mail){
+            String result=user.addFriend(mail);
+            return result;
+        }
+        
+        public String checkPrem(){
+            if(user.isPrem.equals("0"))
+                return"no";
+            else
+                return "yes";
+        }
+        public String logOut(){
+            user=new User();
+            return "Loged out.";
+        }
+        
+         public String acceptRequest(){
+           String result=user.acceptRequest();
+           return result;
+       }
+       public void upgradePremuim(){
+           user.upgradePremuim();
+       }
+        
 	     
 }
