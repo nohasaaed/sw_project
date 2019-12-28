@@ -1,0 +1,24 @@
+Signup test case
+1- Verify that all the fields such as Username, First Name, Last Name, Password and other fields have valid input field.
+2- Verify that all the required/mandatory fields are marked with * against the field
+3- Verify that clicking on submit button after entering all the mandatory fields, submits the data to the server
+4- Verify that system generates a validation message when clicking on submit button without filling all the mandatory fields.
+5- Verify that system generates a validation message when entering existing Email.
+6- Verify that the password is in encrypted form when entered
+
+
+
+Send friend request test case
+1- Verify that user have the option to send request for a friend.
+2- Verify that user is able to send request for a friend with friend's Email.
+3- Verify that validation message gets displayed in case user entered wrong email.
+4- Verify that validation message gets displayed in case user entered email he has sent request before.
+
+
+
+
+Accept friend request test case
+1- Verify that user have the option to accept a request .
+2-  Verify if that user accepted a request then will be deleted from requests list.
+3- Verify if that user accepted a request then will be added to friends list.
+
