@@ -11,11 +11,19 @@ public class UserController{
         
         public UserController(){}
        
-       
+        public String signUp(String gender,String firstName,String lastName,String address,String birthDate,String email,String password){
+            
+            String result;
+            result=user.signUp(gender,firstName,lastName,address,birthDate,email,password);
+            return result;
+    }
         
-        
-        
-        
-      
-       
+        public String logIn(String email,String pass){
+           user=user.logIn(email, pass);
+           if(user==null)
+               return "invaid Email or Password";
+           else
+               return user.firstName+" "+user.lastName;
+       }
+	     
 }
